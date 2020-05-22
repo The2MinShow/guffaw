@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #hechtml{
+        background-color:black;
+        animation-name: sin;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+      #star1{
+        display : box;
+        padding : 9vw;
+        border : 1vw double yellow;
+        margin-left : 40%;
+        font-size : 30px;
+        margin-top : 30%;
+        background: radial-gradient(rgb(0, 255, 148) 30%, rgb(17, 241, 255) 100%)
+      }
+      #star2{
+        display : box;
+        padding : 9vw;
+        border : 1vw double yellow;
+        margin-left : 40%;
+        font-size : 30px;
+        margin-top : 30%;
+        background: radial-gradient(rgb(0, 255, 148) 30%, rgb(17, 241, 255) 100%);
+      }
+      #star3{
+        display: none;
+        color: red;
+        font-size: 100px;
+        margin-top: 30%;
+        margin-left: 20%;
+        animation-name: sin;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+      #t2c{
+        display: none;
+        max-width: 200px;
+        margin-top: 55%;
+        margin-left: 40%;
+        animation-name: fund;
+        animation-duration: 0.66s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+      }
+      #t2b{
+        display: none;
+        max-width: 200px;
+        margin-top: 55%;
+        margin-left: 40%;
+        animation-name: fund;
+        animation-duration: 0.66s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+      }
+      @keyframes fund {
+        0% {opacity:100%}
+        50% {opacity:0%}
+      }
+      @keyframes flashback {
+        0% {background-color: white;
+            color: black;
+            }
+        50% {background-color: black;
+             color:white;
+            }
+        100% {background-color: white;
+              color:  black;
+            }
+      }
+      @keyframes flashback2 {
+        0% {background-color: black;}
+        50% {background-color: white;}
+        100% {background-color: black;}
+      }
+    </style>
+  </head>
+  <body id="hechtml">
+    <audio id="volume">
+      <source src="media/inthyownwords-george_carlin.mp3" type="audio/mpeg">
+        <source src="media/inthyownwords-george_carlin.ogg" type="audio/ogg">
+          your browsers got a knee fractured
+    </audio>
+    <div>
+    <button id="star1" type="button" name="hello" onclick="func()">Hello!</button>
+    <button id="star2" type="button" name="here" style="display:none;" onclick="func2()">Carlin Here</button>
+    <a class="" id="star3" onclick="location.reload();" name="few">Fuck You!</a>
+    <img src="media/the2minshow.png" id="t2c" alt="">
+    <img src="media/bw-the2minshow.png" id="t2b" alt="">
+    <script type="text/javascript">
+      var q = document.getElementById('star2');
+      var r = document.getElementById('star3');
+      var p = document.getElementById('star1');
+      var s = document.getElementById('hechtml');
+      var t = document.getElementById('volume');
+      var u = document.getElementById('t2c');
+      var v = document.getElementById('t2b');
+      function func() {
+        p.style.display = "none";
+        q.style.display = "block";
+        r.style.display = "none";
+        s.style.backgroundColor = "black";
+      }
+      function func2(){
+        p.style.display = "none";
+        q.style.display = "none";
+        r.style.display = "block" ;
+        r.style.animationName = "flashback";
+        s.style.animationName = "flashback2";
+        u.style.animationName = "fund";
+        v.style.animationName = "fund";
+        s.style.backgroundColor = "white";
+        t.play();
+      }
+
+    </script>
+    </div>
+  </body>
+
+</html>

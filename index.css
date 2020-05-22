@@ -1,0 +1,78 @@
+
+*{
+  overflow: hidden;
+}
+.navigation{
+  display: block;
+  max-width: 100vw;
+  height: 11vh;
+  background-color: red
+}
+.nav-bar{
+  display: grid;
+  grid-template-areas: 'logo menu';
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  background-color: grey;
+  height: 100%
+}
+.nav-logo_comp{
+  grid-area: logo;
+  display: block;
+  height: auto;
+  padding: 1vw;
+  margin: 2%;
+}
+#logo_comp{
+  width: 90%;
+  height: 100%
+}
+.nav-menu{
+  display: block;
+  grid-area: menu;
+  height: auto;
+  margin: 2%;
+  padding-left: 50%;
+  padding-top: 10%
+}
+#nav_arrow{
+  width: 30%;
+
+}
+.nav-index_comp_hidden{
+  visibility: hidden;
+}
+.intro-text{
+  background-color: black;
+  position: fixed;
+  top: 20%;
+  font-size: 40px;
+}
+#step1{
+
+}
+#step2{
+  display: none;
+  font-size: inherit;
+}
+#lead-text{
+  display: none;
+  color: red;
+  background-color: white;
+  text-decoration: none;
+}
+.appended{
+  display: box;
+  position: relative;
+  top: -100vh;
+  height: 80vh;
+  max-width: 98vw;
+  background-color: white;
+  margin-top: 3vh;
+  margin-right: 1vw;
+  border: 2px inset black;
+}
+.appended iframe{
+  height: 80vh;
+  width: 100%;
+}

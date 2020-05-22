@@ -1,0 +1,32 @@
+.nav-grid-container{
+  display: grid;
+  grid-template-columns: : 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'dimensiontree relativitytree' 'nav-alt-1 nav-alt-2' 'nav-alt-3 nav-alt-4';
+  grid-gap: 3px;
+}
+.nav-grid-container>div{
+  background-color: grey;
+  display: box;
+  height: 22vh;
+  padding: 10px;
+}
+
+.nav-relativitytree{
+  grid-area: relativitytree;
+}
+.nav-dimensiontree{
+  grid-area: dimensiontree;
+}
+.nav-alt-1{
+  grid-area: nav-alt-1;
+}
+.nav-alt-2{
+  grid-area: nav-alt-2;
+}
+.nav-alt-3{
+  grid-area: nav-alt-3;
+}
+.nav-alt-4{
+  grid-area: nav-alt-4;
+}
